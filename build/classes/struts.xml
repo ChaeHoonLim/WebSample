@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- RESTful URL -->
+	<constant name="struts.mapper.class" value="org.apache.struts2.dispatcher.mapper.Restful2ActionMapper" />
+	<constant name="struts.mapper.class" value="org.apache.struts2.dispatcher.mapper.PrefixBasedActionMapper" />
+	<constant name="struts.mapper.prefixMapping" value="/rest:restful2,:struts" />
+	<constant name="struts.enable.SlashesInActionNames" value="true" />
+	<constant name="struts.mapper.alwaysSelectFullNamespace" value="false" />
+
+	<package name="updater-default" extends="struts-default"/>
+	<include file="updater.xml"/>
+</struts>
