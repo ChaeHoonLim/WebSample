@@ -1,4 +1,4 @@
-package com.ahnlab.updater.action;
+package com.updater.action;
 
 import org.apache.log4j.Logger;
 
