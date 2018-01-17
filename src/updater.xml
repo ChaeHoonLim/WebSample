@@ -4,13 +4,8 @@
 		"http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="updater" namespace="/" extends="updater-default">
-		<!-- 1. 업로드 할 File meta-data -->
-		<action name="metadata" class="com.ahnlab.updater.action.ASCAReceiptAction" method="uploadMetaData">
-			<result name="success">/WEB-INF/jsp/response.jsp</result>
-		</action>
-		
-		<!-- 2. 업로드 File -->
-		<action name="upload" class="com.ahnlab.updater.action.ASCAReceiptAction" method="uploadFileData">
+
+		<action name="metadata" class="com.updater.action.ReceiptAction">
 			<result name="success">/WEB-INF/jsp/response.jsp</result>
 		</action>
 	</package>
