@@ -6,7 +6,7 @@
 	<package name="updater" namespace="/" extends="updater-default">
 
 		<action name="metadata" class="com.updater.action.ReceiptAction" method="show">
-			<result name="success">/WEB-INF/jsp/response.jsp</result>
+			<result name="success">/jsp/response.jsp</result>
 		</action>
 	</package>
 </struts>	
