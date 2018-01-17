@@ -15,32 +15,15 @@ public class ReceiptAction extends ActionSupport{
 	/* post method */
 	public String create() {
 		String result = SUCCESS;
-		
+		logger.debug("POST");
 		return result;
 	}
 	
 	/* get method */
 	public String show() {
 		String result = SUCCESS;
-		
-		return result;
-	}
-	
-	public String uploadMetaData() {
-		String result = SUCCESS;
-		logger.debug("[start] upload meta-data");
-		
-		logger.debug("[finish] upload meta-data");
-		return result;
-	}
-	
-	
-	
-	public String uploadFileData() {
-		String result = SUCCESS;
-		logger.debug("[start] upload file");
-		
-		logger.debug("[finish] upload file");
+		logger.debug("GET");
+		this.result = "hello world";
 		return result;
 	}
 	
