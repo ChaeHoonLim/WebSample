@@ -16,6 +16,7 @@ public class ReceiptAction extends ActionSupport{
 	public String create() {
 		String result = SUCCESS;
 		logger.debug("POST");
+		this.result = "hello world(/api/messages)";
 		return result;
 	}
 	

@@ -8,5 +8,9 @@
 		<action name="metadata" class="com.updater.action.ReceiptAction" method="show">
 			<result name="success">/jsp/response.jsp</result>
 		</action>
+		
+		<action name="api/messages" class="com.updater.action.ReceiptAction" method="create">
+			<result name="success">/jsp/response.jsp</result>
+		</action>
 	</package>
 </struts>	
